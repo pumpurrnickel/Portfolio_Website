@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Playfair+Display:wght@800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Montserrat:wght@100&family=Playfair+Display:wght@800;900&display=swap');
+
+:root{
+    --Mont: "Montserrat", serif;
+    --Fred: "Fredoka", sans-serif;
+    --Wisteria: #928ED7;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--Mont);
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.container ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: var(--Wisteria);
+    font-family: var(--Fred);
+    font-weight: 600;
+    font-size: 24px;
+}
+
+header{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(images/index/Portfolio_Pattern.png) center/ cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.navbar{
+    background: #BAF7D7;
+    padding: 1.2rem;
+}
+
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: center;
+}
+
+
+.logo{
+    color:var(--Wisteria);
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family:var(--Fred);
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.banner{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--Wisteria);
+}
+
+.banner img{
+    height: 100vh;
+    padding: 0;
+    margin: 0%;
+}
+
+.welcome_message{
+    position: absolute;
+    top: 37%;
+    left: 25%;
+}
+
+.welcome_message h3{
+    font-family: var(--Fred);
+    font-weight: 600;
+    font-size: 56px;
+    color: var(--Wisteria);
+}
