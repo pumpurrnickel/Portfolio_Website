@@ -5,35 +5,34 @@
     --Mont: "Montserrat", serif;
     --Fred: "Fredoka", sans-serif;
     --Wisteria: #928ED7;
+    --Mint: #BAF7D7;
+    --Honeydew: #E9FCE6;
 }
 
 *{
     padding: 0;
     margin: 0;
-    font-family: var(--Mont);
+    font-family: var(--Fred);
     box-sizing: border-box;
 }
 
+/* Header design section for index page */
+
 .container{
-    max-width: 1320px;
-    margin: 0 auto;
     padding: 0 1.6rem;
     display: flex;
     justify-content: space-between;
 }
 
-.container ul{
+ul{
     display: flex;
-    justify-content: center;
+    width: 40%;
+    list-style: none;
+    justify-content: space-around;
     align-items: center;
 }
 
-.container ul li{
-    list-style: none;
-    margin-left: 20px;
-}
-
-.container ul li a{
+ul li a{
     text-decoration: none;
     padding: 6px 15px;
     color: var(--Wisteria);
@@ -43,15 +42,17 @@
 }
 
 header{
-    min-height: 100vh;
+    min-height: 80vh;
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(images/index/Portfolio_Pattern.png) center/ cover no-repeat fixed;
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
 }
 
 .navbar{
-    background: #BAF7D7;
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    background: var(--Mint);
     padding: 1.2rem;
 }
 
@@ -60,12 +61,10 @@ header{
     text-align: center;
 }
 
-
 .logo{
     color:var(--Wisteria);
     font-size: 3rem;
     display: block;
-    text-align: center;
     text-decoration: none;
     font-family:var(--Fred);
     font-weight: 600;
@@ -74,29 +73,79 @@ header{
 }
 
 .banner{
-    flex: 1;
+    /* flex: 1; */
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
-    text-align: center;
     color: var(--Wisteria);
 }
 
 .banner img{
-    height: 100vh;
-    padding: 0;
-    margin: 0%;
+    /* position: absolute; */
+    width: 1200px;
+    /* padding: 0;
+    margin: 0%; */
 }
 
 .welcome_message{
-    position: absolute;
-    top: 37%;
-    left: 25%;
+    position: relative;
+    /* top: 37%;
+    left: 25%; */
 }
 
 .welcome_message h3{
     font-family: var(--Fred);
     font-weight: 600;
-    font-size: 56px;
+    font-size: 50px;
     color: var(--Wisteria);
+    position: absolute;
+    z-index: 1;
+    top: 230px;
+    left: 130px;
+}
+
+/* Paragraph design section */
+
+
+.bio{
+    padding: 4.5rem 0;
+    background-color: var(--Mint);
+    justify-items: center;
+    flex-direction: column;
+}
+
+.title{
+    text-align: center;
+    padding: 1rem 0;
+    color:var(--Wisteria)
+}
+
+.title h1{
+    font-family: var(--Fred);
+    font-size: 2.4rem;
+}
+
+.title h2{
+    padding: 0.6rem 0;
+}
+
+.blog{
+    display:block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    text-align: center;
+    border-style: none;
+    border-radius: 75px;
+    background-color: var(--Honeydew);
+}
+
+.blog p{
+    margin:0 200px;
+    line-height: 40px;
+    font-size: 20px;
+    padding: 100px 0;
+    color: var(--Wisteria);
+    font-weight: 100;
 }

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Playfair+Display:wght@800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Montserrat:wght@100&family=Playfair+Display:wght@800;900&display=swap');
+
+:root{
+    --Mont: "Montserrat", serif;
+    --Fred: "Fredoka", sans-serif;
+    --Wisteria: #928ED7;
+    --Mint: #BAF7D7;
+    --Honeydew: #E9FCE6;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--Fred);
+    box-sizing: border-box;
+}
+
+/* Header design section for index page */
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+
+ul{
+    display: flex;
+    width: 40%;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: var(--Wisteria);
+    font-family: var(--Fred);
+    font-weight: 600;
+    font-size: 24px;
+}
+
+header{
+    min-height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(images/projects/Banner_Lights.png) center/ cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    background: var(--Mint);
+    padding: 1.2rem;
+}
+
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: center;
+}
+
+.logo{
+    color:var(--Wisteria);
+    font-size: 3rem;
+    display: block;
+    text-decoration: none;
+    font-family:var(--Fred);
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.parallax{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* padding: 100x; */
+}
+
+.parallax img{
+    position: absolute;
+    min-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+
+
+.projects{
+    padding: 4.5rem;
+    background-color: var(--Mint);
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.title{
+    text-align: center;
+    padding: 1rem 0;
+    color: var(--Wisteria);
+}
+
+.title h1{
+    font-family: var(--Mont);
+    font-size: 2.4rem;
+}
+
+.title h2{
+    text-transform: uppercase;
+    padding: 0.6rem 0;
+}
+
+.project-content{
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.project-item{
+    cursor: pointer;
+    margin: 1.5rem 0;
+}
+
+.project-img{
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.project-img::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.project-img img{
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.project-img:hover img{
+    transform: scale(1.2);
+}
+
+.project-img span:first-of-type{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    color: var(--Honeydew);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.project-title h3{
+    margin: 50px 0;
+    font-size: 30px;
+}
+
+.project-title a{
+    color: var(--Wisteria);
+    text-decoration: none;
+    text-transform: capitalize;
+}
